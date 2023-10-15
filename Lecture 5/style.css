@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'HeadingNowVar';
+    src: url('./Heading-Now-Variable.ttf');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'HeadingNowVar';
+    color: #fff;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#loader {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(221, 221, 221);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loader h1 {
+    font-size: 100px;
+    font-weight: 999;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.page {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    overflow: hidden;
+}
+
+#page1 h1 {
+    text-transform: uppercase;
+    font-size: 40vw;
+    white-space: nowrap;
+    font-stretch: 250%;
+    font-weight: 999;
+}

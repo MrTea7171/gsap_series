@@ -1,0 +1,393 @@
+@font-face {
+    font-family: 'Canopee';
+    src: url('./fonts/Canopee.woff2');
+}
+
+@font-face {
+    font-family: 'DomaineDispCond';
+    src: url('./fonts/DomaineDispCondMedium.woff2');
+}
+
+@font-face {
+    font-family: 'EditorialNew-Light';
+    src: url('./fonts/EditorialNew-Light.woff2');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Tilda Sans';
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+}
+
+#main {
+    background-color: #222;
+    overflow-x: hidden;
+}
+
+#page1 {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #c5beb4;
+    position: relative;
+    overflow: hidden;
+}
+
+#nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding: 0px 30px;
+    font-size: 14px;
+    border-bottom: 1px solid #222;
+}
+
+#nav img {
+    height: 2vw;
+}
+
+#nav h5 {
+    width: 30%;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+#nav i {
+    width: 30%;
+    text-align: right;
+}
+
+#elems {
+    height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 60px;
+}
+
+#elem1,
+#elem2,
+#elem3 {
+    height: 100%;
+}
+
+#elem1,
+#elem2,
+#elem3 {
+    width: 30%;
+    height: 100%;
+}
+
+#elem2 {
+    padding: 20px 60px;
+    border-left: 1px solid #acacac;
+    border-right: 1px solid #acacac;
+    text-align: center;
+}
+
+#elem1 #image-div,
+#elem3 #image-div {
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#image-div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+#image-div:hover img {
+    transform: scale(1.1);
+}
+
+#elem1 h4,
+#elem3 h4 {
+    font-size: 24px;
+    margin: 20px 0px;
+    font-family: 'Canopee';
+}
+
+#elem1 h4 span,
+#elem3 h4 span {
+    background-color: #b93c11;
+    color: #c4bcb3;
+    font-weight: 100;
+    font-size: 18px;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+#elem1 p,
+#elem3 p {
+    font-size: 23px;
+    font-family: 'DomaineDispCond';
+    font-weight: 100;
+    line-height: 1.2;
+    color: #656565;
+}
+
+#elem2 h2 {
+    font-family: 'canopee';
+    font-size: 70px;
+    font-weight: 100;
+}
+
+#elem2 h3 {
+    font-family: 'DomaineDispCond';
+    font-size: 45px;
+    font-weight: 100;
+    color: #3b3b3b;
+    margin: 20px 0px;
+}
+
+#elem2 h6 {
+    font-family: 'DomaineDispCond';
+    font-size: 20px;
+    font-weight: 100;
+    color: #3b3b3b;
+}
+
+#page1 h1 {
+    font-size: 35vw;
+    line-height: 33vw;
+    font-family: 'canopee';
+    font-weight: 100;
+    background-color: #1c1c19;
+    color: #c5beb4;
+    width: 98%;
+    margin-left: 1%;
+    text-align: center;
+    letter-spacing: -25px;
+}
+
+#page2 {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #c5beb4;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 90px 40px;
+}
+
+#page2-left {
+    width: 35%;
+    height: 100%;
+    border-right: 1px solid #222;
+    padding-right: 40px;
+}
+
+#page2-left img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#page2-left h2 {
+    padding: 1vw 0.5vw;
+    font-family: 'canopee';
+    font-size: 6vw;
+    text-align: center;
+    line-height: 7vw;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+#page2-left h2 span {
+    font-family: 'canopee';
+    font-size: 12vw;
+}
+
+#page2-left p {
+    font-family: 'domaineDispCond';
+    font-size: 2.5vw;
+    color: #2f2f2f;
+}
+
+#page2-right {
+    height: 100%;
+    width: 70%;
+    padding: 0 50px;
+}
+
+#page2-right img {
+    height: 53%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#page2-right h1 {
+    font-family: 'canopee';
+    font-size: 6.5vw;
+    font-weight: 100;
+    letter-spacing: -1px;
+}
+
+#page3 {
+    background-color: #c5beb4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#page3 h1 {
+    font-family: 'canopee';
+    font-size: 25vw;
+    background-color: #1c1c19;
+    color: #c4bcb3;
+    width: fit-content;
+    font-weight: 100%;
+    padding: 0px 20px;
+}
+
+#page3 img {
+    height: 25vw;
+}
+
+#page4 {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    background-color: #c4bcb3;
+}
+
+#page4-left {
+    width: 65%;
+    height: 100%;
+    padding: 80px 60px;
+}
+
+#page4-left img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#page4-right {
+    width: 35%;
+    height: 100%;
+    padding: 80px 60px;
+}
+
+#page4-right p {
+    font-size: 2vw;
+    font-family: 'domaineDispCond';
+    font-weight: 100;
+    color: #2f2f2f;
+    margin-bottom: 150px;
+    line-height: 35px;
+}
+
+#page4-right #anda {
+    height: 260px;
+    background-color: #cac1b6;
+    border: 1px solid #2f2f2fc6;
+    border-radius: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+#anda h1 {
+    font-size: 6vw;
+    font-weight: 100;
+    font-family: 'canopee';
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-20%);
+    transition: all ease 0.6s;
+}
+
+#anda img {
+    height: 60px;
+    transition: all ease 0.6s;
+
+    transform: translateX(-120%);
+}
+
+#anda:hover img {
+    transform: translateX(76%);
+}
+
+#anda:hover h1 {
+    transform: translateX(100%);
+}
+
+#page5 {
+    padding: 25px 0;
+    width: 100%;
+    background-color: #c4bcb3;
+    border-top: 1px solid #2f2f2f;
+    border-bottom: 1px solid #2f2f2f;
+
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#page5::-webkit-scrollbar {
+    display: none;
+}
+
+#page5 h1 {
+    font-size: 100px;
+    font-family: domain;
+    font-weight: 100;
+    display: inline-block;
+    /* background-color: red; */
+    animation-timing-function: linear;
+    margin-right: 30px;
+    animation-name: scroll;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+#page5 h1 span {
+    font-family: canopee;
+    background-color: #1b1b1b;
+    color: #c4bcb3;
+    padding: 0 12px;
+}
+
+#page6 {
+    height: 100px;
+    width: 100%;
+    background-color: #c4bcb3;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-100% - 2vw));
+    }
+}
+
+#page5:hover h1 {
+    animation-play-state: paused;
+}

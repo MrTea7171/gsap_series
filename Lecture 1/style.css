@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,body{
+height: 100%;
+width: 100%;
+}
+
+#page1{
+    height: 100%;
+    width: 100%;
+    background-color: lightblue
+}
+
+#box{
+    height: 300px;
+    width: 300px;
+    background-color: crimson
+}
+
+h1{
+    color: red;
+    font-size: 50px;
+}
+
+h2{
+    color: blue;
+    font-size: 40px;
+}
+
+h3{
+    color: green;
+    font-size: 30px;
+}
